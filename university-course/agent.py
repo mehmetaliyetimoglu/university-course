@@ -32,7 +32,15 @@ Gereksinimler:
 import os
 import json
 import operator
+import contextlib
+import io
 from typing import TypedDict, Annotated
+
+os.environ.setdefault("HF_HUB_DISABLE_PROGRESS_BARS", "1")
+os.environ.setdefault("HF_HUB_DISABLE_SYMLINKS_WARNING", "1")
+os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
+os.environ.setdefault("TRANSFORMERS_NO_ADVISORY_WARNINGS", "1")
+os.environ.setdefault("TQDM_DISABLE", "1")
 
 from dotenv import load_dotenv
 
@@ -48,6 +56,7 @@ from langchain_chroma import Chroma
 
 # Web Search
 from ddgs import DDGS
+from openai import AuthenticationError
 
 load_dotenv()
 
@@ -65,7 +74,7 @@ GROQ_DEFAULT_MODEL = "llama-3.3-70b-versatile"
 
 # GitHub Models (alternatif)
 GITHUB_BASE_URL = "https://models.github.ai/inference"
-GITHUB_DEFAULT_MODEL = "openai/gpt-4o-mini"
+GITHUB_DEFAULT_MODEL = "openai/gpt-4.1"
 
 GROQ_API_KEY  = os.getenv("GROQ_API_KEY", "")
 GITHUB_TOKEN  = os.getenv("GITHUB_TOKEN", "")
@@ -122,17 +131,44 @@ def get_llm() -> ChatOpenAI:
         )
 
 
+def explain_auth_error(provider: str) -> RuntimeError:
+    if provider == "GitHub Models":
+        return RuntimeError(
+            "\nGitHub Models authentication failed (Unauthorized).\n\n"
+            "Fix:\n"
+            "  1. Create a new GitHub Personal Access Token.\n"
+            "  2. Give it GitHub Models read permission (models: read / read:models).\n"
+            "  3. Replace GITHUB_TOKEN in .env with the new token.\n"
+            "  4. Keep GITHUB_MODEL=openai/gpt-4.1 and try again.\n\n"
+            "Note: Do not put your token in .env.example; keep it only in .env."
+        )
+    return RuntimeError(
+        "\nLLM provider authentication failed.\n"
+        "Check the API key in your .env file."
+    )
+
+
+def invoke_llm(messages):
+    try:
+        return get_llm().invoke(messages)
+    except AuthenticationError:
+        provider = "Groq" if GROQ_API_KEY else "GitHub Models"
+        raise explain_auth_error(provider) from None
+
+
 def get_vectorstore() -> Chroma:
     if not os.path.exists(CHROMA_DIR):
         raise FileNotFoundError(
             f"Vektör deposu bulunamadı: '{CHROMA_DIR}'\n"
             "Önce 'python ingest.py' komutunu çalıştırın!"
         )
-    embeddings = HuggingFaceEmbeddings(
-        model_name=EMBEDDING_MODEL,
-        model_kwargs={"device": "cpu"},
-        encode_kwargs={"normalize_embeddings": True},
-    )
+    with contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(io.StringIO()):
+        embeddings = HuggingFaceEmbeddings(
+            model_name=EMBEDDING_MODEL,
+            model_kwargs={"device": "cpu", "local_files_only": True},
+            encode_kwargs={"normalize_embeddings": True},
+            show_progress=False,
+        )
     return Chroma(
         persist_directory=CHROMA_DIR,
         embedding_function=embeddings,
@@ -141,50 +177,49 @@ def get_vectorstore() -> Chroma:
 
 
 def web_search_tool(query: str) -> str:
-    """DDGS ile web araması yapar."""
+    """Run a DuckDuckGo web search."""
     try:
         with DDGS() as ddgs:
-            results = list(ddgs.text(query, max_results=MAX_WEB_RESULTS, region="tr-tr"))
+            results = list(ddgs.text(query, max_results=MAX_WEB_RESULTS, region="wt-wt"))
         if not results:
-            return "Web aramasında sonuç bulunamadı."
+            return "No web search results were found."
         formatted = []
         for i, r in enumerate(results, 1):
             formatted.append(
-                f"[{i}] {r.get('title', 'Başlıksız')}\n"
+                f"[{i}] {r.get('title', 'Untitled')}\n"
                 f"    {r.get('href', '')}\n"
                 f"    {r.get('body', '')[:400]}"
             )
         return "\n\n".join(formatted)
     except Exception as e:
-        return f"Web araması sırasında hata oluştu: {str(e)}"
+        return f"Web search failed: {str(e)}"
 
 
 # ─────────────────────────────────────────────
 # Node 1: Sorgu Analizi
 # ─────────────────────────────────────────────
 def analyze_query(state: AgentState) -> dict:
-    """Hangi araçların kullanılacağına karar verir."""
-    print("\n[AJAN] 🔍 Sorgu analiz ediliyor...")
-
-    llm = get_llm()
+    """Decide which tools are needed for the query."""
+    print("\n[AGENT] 🔍 Analyzing query...")
 
     messages = [
-        SystemMessage(content="""Sen bir üniversite ders danışmanı asistanısın.
-Kullanıcının sorusunu analiz et ve hangi araçları kullanman gerektiğine karar ver.
+        SystemMessage(content="""You are a university course advising assistant.
+Analyze the user's question and decide which tools are needed.
 
-Araçların:
-1. RAG (Yerel Veritabanı): Ders kodu, içerik, kredi, ön koşul, not sistemi,
-   mezuniyet gereksinimleri, akademik takvim, burs, kulüp bilgileri için kullan.
+Tools:
+1. RAG (Local Knowledge Base): Use it for course codes, course content, credits,
+   prerequisites, grading, graduation requirements, academic calendar, scholarships,
+   clubs, and university-specific advising information.
 
-2. Web Araması: Güncel haberler, maaş bilgileri, yeni teknoloji sürümleri,
-   iş ilanları, sektör trendleri için kullan.
+2. Web Search: Use it for current news, salaries, latest technology versions,
+   job postings, and industry trends.
 
-SADECE şu JSON formatında yanıt ver, başka hiçbir şey yazma:
-{"use_rag": true, "use_web": false, "reason": "açıklama"}"""),
-        HumanMessage(content=f"Kullanıcı sorusu: {state['query']}")
+Return ONLY this JSON format and nothing else:
+{"use_rag": true, "use_web": false, "reason": "short English explanation"}"""),
+        HumanMessage(content=f"User question: {state['query']}")
     ]
 
-    response = llm.invoke(messages)
+    response = invoke_llm(messages)
 
     try:
         content = response.content.strip()
@@ -199,10 +234,10 @@ SADECE şu JSON formatında yanıt ver, başka hiçbir şey yazma:
     except Exception:
         needs_rag = True
         needs_web = False
-        reason    = "Analiz ayrıştırılamadı, RAG varsayılan."
+        reason    = "Could not parse analysis; defaulting to RAG."
 
-    print(f"         RAG gerekli: {needs_rag} | Web gerekli: {needs_web}")
-    print(f"         Neden: {reason}")
+    print(f"         Needs RAG: {needs_rag} | Needs web: {needs_web}")
+    print(f"         Reason: {reason}")
 
     return {
         "needs_rag":      needs_rag,
@@ -221,21 +256,22 @@ SADECE şu JSON formatında yanıt ver, başka hiçbir şey yazma:
 # ─────────────────────────────────────────────
 def retrieve_docs(state: AgentState) -> dict:
     """ChromaDB'den ilgili belgeleri getirir."""
-    print("\n[AJAN] 📚 Yerel veritabanından bilgi alınıyor (RAG)...")
+    print("\n[AGENT] 📚 Retrieving from local knowledge base (RAG)...")
 
     vectorstore = get_vectorstore()
-    docs = vectorstore.similarity_search(state["query"], k=TOP_K_DOCS)
+    with contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(io.StringIO()):
+        docs = vectorstore.similarity_search(state["query"], k=TOP_K_DOCS)
 
     if not docs:
-        retrieved_text = "Yerel veritabanında ilgili bilgi bulunamadı."
+        retrieved_text = "No relevant information was found in the local knowledge base."
     else:
         parts = []
         for i, doc in enumerate(docs, 1):
-            source = doc.metadata.get("source", "bilinmeyen")
-            parts.append(f"[Kaynak {i} — {source}]\n{doc.page_content}")
+            source = doc.metadata.get("source", "unknown")
+            parts.append(f"[Source {i} — {source}]\n{doc.page_content}")
         retrieved_text = "\n\n---\n\n".join(parts)
 
-    print(f"         {len(docs)} belge parçası bulundu.")
+    print(f"         Found {len(docs)} document chunks.")
 
     return {
         "retrieved_docs": retrieved_text,
@@ -248,11 +284,11 @@ def retrieve_docs(state: AgentState) -> dict:
 # ─────────────────────────────────────────────
 def web_search(state: AgentState) -> dict:
     """DDGS ile güncel web araması yapar."""
-    print("\n[AJAN] 🌐 Web araması yapılıyor...")
+    print("\n[AGENT] 🌐 Running web search...")
 
-    search_query = f"{state['query']} Türkiye üniversite"
+    search_query = f"{state['query']} Turkey university"
     results = web_search_tool(search_query)
-    print("         Web araması tamamlandı.")
+    print("         Web search completed.")
 
     return {
         "web_results": results,
@@ -265,49 +301,51 @@ def web_search(state: AgentState) -> dict:
 # ─────────────────────────────────────────────
 def generate_response(state: AgentState) -> dict:
     """Toplanan bilgilerle kapsamlı bir yanıt üretir."""
-    print("\n[AJAN] ✍️  Yanıt oluşturuluyor...")
-
-    llm = get_llm()
+    print("\n[AGENT] ✍️  Generating response...")
 
     context_parts  = []
     sources_used   = []
 
     if state.get("retrieved_docs"):
         context_parts.append(
-            "=== YEREL VERİTABANI (RAG) BİLGİLERİ ===\n" + state["retrieved_docs"]
+            "=== LOCAL KNOWLEDGE BASE (RAG) ===\n" + state["retrieved_docs"]
         )
-        sources_used.append("📚 Yerel veritabanı (RAG)")
+        sources_used.append("📚 Local knowledge base (RAG)")
 
     if state.get("web_results"):
         context_parts.append(
-            "=== WEB ARAMASI SONUÇLARI ===\n" + state["web_results"]
+            "=== WEB SEARCH RESULTS ===\n" + state["web_results"]
         )
-        sources_used.append("🌐 Web araması")
+        sources_used.append("🌐 Web search")
 
-    context     = "\n\n".join(context_parts) if context_parts else "Bağlam bulunamadı."
-    sources_str = " + ".join(sources_used)  if sources_used  else "Genel bilgi"
+    context     = "\n\n".join(context_parts) if context_parts else "No context found."
+    sources_str = " + ".join(sources_used)  if sources_used  else "General knowledge"
 
     messages = [
-        SystemMessage(content=f"""Sen yardımsever bir üniversite ders danışmanı asistanısın.
-Aşağıdaki BAĞLAM bilgilerini kullanarak kullanıcının sorusunu Türkçe olarak yanıtla.
+        SystemMessage(content=f"""You are a helpful university course advising assistant.
+Use the CONTEXT below to answer the user's question.
 
-ÖNEMLİ KURALLAR:
-- Bağlamdaki bilgileri MUTLAKA kullan ve somut detaylar ver (ders kodu, kredi, ön koşul vb.).
-- Bağlamda bilgi varsa "bilgi yok" deme — varsa kullan.
-- Web araması sonucu varsa onu da yanıta dahil et.
-- Yanıt açık, öğrenciye yardımcı, madde madde olsun.
+IMPORTANT RULES:
+- Answer in the same language as the user's question.
+- If the user asks in English, answer fully in English.
+- Use the context whenever it contains relevant information, and give concrete details
+  such as course code, credits, prerequisites, and recommended order.
+- If a Turkish course title appears in the context, you may translate it to English,
+  but keep the official course code and optionally include the original title in parentheses.
+- If web search results are available, include them in the answer.
+- Make the answer clear, student-friendly, and structured with bullet points when useful.
 
-Kullanılan Kaynaklar: {sources_str}
+Sources used: {sources_str}
 
-BAĞLAM:
+CONTEXT:
 {context}"""),
         HumanMessage(content=state["query"])
     ]
 
-    response       = llm.invoke(messages)
+    response       = invoke_llm(messages)
     final_response = response.content
 
-    print("         Yanıt hazır.")
+    print("         Response ready.")
 
     return {
         "response": final_response,
@@ -385,6 +423,6 @@ def run_agent(query: str) -> str:
 
 
 if __name__ == "__main__":
-    test_query = "Makine öğrenmesi dersinin ön koşulları nelerdir?"
+    test_query = "What are the prerequisites for the Machine Learning course?"
     print(f"Test: {test_query}")
     print(run_agent(test_query))
