@@ -1,0 +1,58 @@
+BÖLÜM: Bilgisayar Mühendisliği
+BELGE: Yapay Zeka ve Makine Öğrenmesi Dersleri
+
+---
+
+DERS KODU: BM401
+DERS ADI: Yapay Zekaya Giriş
+KREDİ: 3 (3-0-3)
+DÖNEM: Güz, 4. Yıl
+AÇIKLAMA: Yapay zeka tarihi ve temel kavramlar. Arama algoritmaları (BFS, DFS, A*),
+bilgi temsili, uzman sistemler, doğal dil işlemeye giriş.
+ÖN KOŞUL: BM201, BM202
+DEĞERLENDİRME: 2 Ara sınav (%50), Final (%40), Ödev (%10)
+
+---
+
+DERS KODU: BM402
+DERS ADI: Makine Öğrenmesi
+KREDİ: 3 (3-0-3)
+DÖNEM: Bahar, 4. Yıl
+AÇIKLAMA: Gözetimli, gözetimsiz ve pekiştirmeli öğrenme. Doğrusal regresyon,
+lojistik regresyon, karar ağaçları, destek vektör makineleri, sinir ağlarına giriş.
+Scikit-learn ile uygulamalar.
+ÖN KOŞUL: BM401, MAT301 (Olasılık ve İstatistik)
+DEĞERLENDİRME: Ara sınav (%30), Final (%40), Proje (%30)
+
+---
+
+DERS KODU: BM451
+DERS ADI: Derin Öğrenme
+KREDİ: 3 (3-0-3)
+DÖNEM: Güz, 4. Yıl (Seçmeli)
+AÇIKLAMA: Derin sinir ağları, evrişimli sinir ağları (CNN), tekrarlayan sinir ağları (RNN),
+LSTM, transformerlar. TensorFlow ve PyTorch ile uygulama.
+ÖN KOŞUL: BM402
+DEĞERLENDİRME: Ara sınav (%25), Final (%35), Proje (%40)
+
+---
+
+DERS KODU: BM452
+DERS ADI: Doğal Dil İşleme
+KREDİ: 3 (3-0-3)
+DÖNEM: Bahar, 4. Yıl (Seçmeli)
+AÇIKLAMA: Metin ön işleme, dil modelleri, kelime gömme (Word2Vec, GloVe),
+BERT ve GPT mimarileri, duygu analizi, makine çevirisi.
+ÖN KOŞUL: BM402
+DEĞERLENDİRME: Ara sınav (%25), Final (%35), Proje (%40)
+
+---
+
+DERS KODU: BM453
+DERS ADI: Bilgisayarla Görü
+KREDİ: 3 (3-0-3)
+DÖNEM: Güz, 4. Yıl (Seçmeli)
+AÇIKLAMA: Görüntü işleme temelleri, özellik çıkarımı, nesne tespiti (YOLO, R-CNN),
+görüntü segmentasyonu, jeneratif modeller (GAN).
+ÖN KOŞUL: BM402
+DEĞERLENDİRME: Ara sınav (%25), Final (%35), Proje (%40)

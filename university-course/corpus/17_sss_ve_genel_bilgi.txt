@@ -1,0 +1,49 @@
+BÖLÜM: Akademik Rehberlik
+BELGE: Sıkça Sorulan Sorular ve Genel Bilgiler
+
+---
+
+SIKÇA SORULAN SORULAR
+
+S: Hangi dersi almadan önce hangi dersi almalıyım?
+C: Her dersin ön koşulları katalogda belirtilmiştir. Danışmanınızla ders planınızı onaylayın.
+Genel kural: 1. yıl temel dersler → 2. yıl ara dersler → 3-4. yıl ileri/seçmeli dersler.
+
+S: Bir dersten FF alırsam ne olur?
+C: Dersi tekrar almanız gerekir. CGPA'nızı etkiler. Aynı ders için 3 başarısız denemeden sonra
+akademik danışmanlık zorunlu hale gelir.
+
+S: Çift anadal veya yandal yapabilir miyim?
+C: Evet. Çift anadal için CGPA ≥ 2.75, yandal için CGPA ≥ 2.50 gereklidir.
+Endüstri Mühendisliği, Matematik, Elektrik-Elektronik Mühendisliği popüler seçeneklerdir.
+
+S: Bir dersi audit (dinleyici) olarak alabilir miyim?
+C: Evet, ders yükü sınırını aşmamak kaydıyla. Auditing dersler not ortalamasına katılmaz.
+
+S: Ders saatini veya sınıfı değiştirebilir miyim?
+C: Kayıt döneminde veya ekle-bırak haftasında ders bazlı bölüm değişikliği yapılabilir.
+
+---
+
+DANIŞMAN İLETİŞİM:
+Her öğrenciye atanmış bir akademik danışman bulunmaktadır.
+Danışman görüşmeleri: Haftada 2 saat ofis saati
+Randevu: universite.edu.tr/danismanlik sistemi üzerinden
+
+---
+
+ÖĞRENCİ KULÜPLERİ VE ETKİNLİKLER:
+- IEEE Öğrenci Kolu: Konferanslar, workshop'lar, hackathon'lar
+- ACM Öğrenci Kolu: Algoritma yarışmaları, teknik seminerler
+- Yapay Zeka Topluluğu: Proje grupları, makale okumaları
+- Girişimcilik Kulübü: Startup etkinlikleri, mentor programı
+- Siber Güvenlik Kulübü: CTF yarışmaları, güvenlik workshop'ları
+
+---
+
+ÖNEMLİ BAĞLANTILAR:
+- Ders Kaydı: obs.universite.edu.tr
+- E-Öğrenme: lms.universite.edu.tr
+- Kütüphane: kutuphane.universite.edu.tr
+- Kariyer Merkezi: kariyer.universite.edu.tr
+- Öğrenci İşleri: ogrenciisleri.universite.edu.tr

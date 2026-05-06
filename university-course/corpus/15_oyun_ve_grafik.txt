@@ -1,0 +1,36 @@
+BÖLÜM: Bilgisayar Mühendisliği
+BELGE: Oyun Geliştirme ve Bilgisayar Grafikleri Dersleri
+
+---
+
+DERS KODU: BM381
+DERS ADI: Bilgisayar Grafiklerine Giriş
+KREDİ: 3 (2-2-3)
+DÖNEM: Güz, 3. Yıl (Seçmeli)
+AÇIKLAMA: 2D ve 3D koordinat sistemleri, geometrik dönüşümler, projeksiyon,
+görünüm bölütleme, rasterizasyon, OpenGL ile programlama, GLSL shader dili.
+ÖN KOŞUL: MAT201
+DEĞERLENDİRME: Ara sınav (%20), Final (%30), Lab/Proje (%50)
+
+---
+
+DERS KODU: BM382
+DERS ADI: Oyun Geliştirme
+KREDİ: 3 (2-2-3)
+DÖNEM: Bahar, 3. Yıl (Seçmeli)
+AÇIKLAMA: Oyun döngüsü ve mimari, Unity ve Unreal Engine kullanımı, oyun fiziği,
+yapay zeka (pathfinding, davranış ağaçları), ses ve müzik entegrasyonu,
+oyun tasarım ilkeleri ve prototipleme.
+ÖN KOŞUL: BM201
+DEĞERLENDİRME: Ara sınav (%15), Final (%25), Proje (%60)
+
+---
+
+DERS KODU: BM383
+DERS ADI: Sanal ve Artırılmış Gerçeklik
+KREDİ: 3 (2-2-3)
+DÖNEM: Güz, 4. Yıl (Seçmeli)
+AÇIKLAMA: VR/AR/MR kavramları, 3D kullanıcı arayüzleri, head-mounted display teknolojisi,
+hareket takibi, Unity ile VR geliştirme, endüstriyel ve eğitim uygulamaları.
+ÖN KOŞUL: BM381
+DEĞERLENDİRME: Ara sınav (%20), Final (%30), Proje (%50)

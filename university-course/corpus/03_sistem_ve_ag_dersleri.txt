@@ -1,0 +1,59 @@
+BÖLÜM: Bilgisayar Mühendisliği
+BELGE: Sistem Programlama ve Bilgisayar Ağları Dersleri
+
+---
+
+DERS KODU: BM301
+DERS ADI: İşletim Sistemleri
+KREDİ: 4 (3-2-4)
+DÖNEM: Güz, 3. Yıl
+AÇIKLAMA: İşletim sistemi kavramları, süreç yönetimi, bellek yönetimi, dosya sistemi,
+G/Ç yönetimi, eşzamanlılık, kilitlenme. Linux sistem çağrıları ile lab çalışmaları.
+ÖN KOŞUL: BM201, BM251
+DEĞERLENDİRME: 2 Ara sınav (%40), Final (%40), Lab (%20)
+
+---
+
+DERS KODU: BM302
+DERS ADI: Bilgisayar Ağları
+KREDİ: 4 (3-2-4)
+DÖNEM: Bahar, 3. Yıl
+AÇIKLAMA: OSI ve TCP/IP modelleri, fiziksel katman, veri bağlantı katmanı,
+ağ katmanı (IP, yönlendirme), taşıma katmanı (TCP, UDP), uygulama katmanı (HTTP, DNS, SMTP).
+Socket programlama uygulamaları.
+ÖN KOŞUL: BM201
+DEĞERLENDİRME: 2 Ara sınav (%40), Final (%40), Lab (%20)
+
+---
+
+DERS KODU: BM251
+DERS ADI: Bilgisayar Mimarisi
+KREDİ: 4 (3-2-4)
+DÖNEM: Güz, 3. Yıl
+AÇIKLAMA: Sayı sistemleri, Boolean cebri, kombinasyonel ve sıralı devreler,
+işlemci mimarisi, bellek hiyerarşisi, pipeline, RISC ve CISC.
+Assembly dili programlama.
+ÖN KOŞUL: BM102
+DEĞERLENDİRME: 2 Ara sınav (%50), Final (%40), Lab (%10)
+
+---
+
+DERS KODU: BM351
+DERS ADI: Siber Güvenliğe Giriş
+KREDİ: 3 (3-0-3)
+DÖNEM: Bahar, 3. Yıl (Seçmeli)
+AÇIKLAMA: Ağ güvenliği, kriptografi temelleri, güvenlik açıkları ve saldırı türleri,
+güvenlik duvarları, IDS/IPS, penetrasyon testine giriş, etik hackleme.
+ÖN KOŞUL: BM302
+DEĞERLENDİRME: Ara sınav (%30), Final (%40), Lab (%30)
+
+---
+
+DERS KODU: BM352
+DERS ADI: Dağıtık Sistemler
+KREDİ: 3 (3-0-3)
+DÖNEM: Güz, 4. Yıl (Seçmeli)
+AÇIKLAMA: Dağıtık sistem modelleri, RPC, mesaj geçişi, tutarlılık ve replikasyon,
+hata toleransı, Paxos/Raft konsensüs algoritmaları, bulut bilişim temelleri.
+ÖN KOŞUL: BM301, BM302
+DEĞERLENDİRME: Ara sınav (%30), Final (%40), Proje (%30)

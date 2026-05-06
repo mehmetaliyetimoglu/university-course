@@ -1,0 +1,58 @@
+BÖLÜM: Bilgisayar Mühendisliği
+BELGE: Temel Dersler (1. ve 2. Yıl)
+
+---
+
+DERS KODU: BM101
+DERS ADI: Bilgisayar Bilimlerine Giriş
+KREDİ: 3 (3-0-3)
+DÖNEM: Güz, 1. Yıl
+AÇIKLAMA: Bilgisayar bilimi temel kavramları, algoritmik düşünme, problem çözme yöntemleri.
+Python programlama diline giriş. Değişkenler, koşullar, döngüler, fonksiyonlar ve temel veri yapıları.
+ÖN KOŞUL: Yok
+DEĞERLENDİRME: 2 Ara sınav (%50), Final (%40), Ödevler (%10)
+
+---
+
+DERS KODU: BM102
+DERS ADI: Nesneye Yönelik Programlama
+KREDİ: 4 (3-2-4)
+DÖNEM: Bahar, 1. Yıl
+AÇIKLAMA: Java programlama dili kullanılarak nesneye yönelik programlama paradigması.
+Sınıflar, nesneler, kalıtım, polimorfizm, kapsülleme ve soyutlama kavramları.
+Laboratuvar çalışmaları ile uygulamalı öğrenim.
+ÖN KOŞUL: BM101
+DEĞERLENDİRME: 2 Ara sınav (%40), Final (%40), Lab (%20)
+
+---
+
+DERS KODU: BM201
+DERS ADI: Veri Yapıları ve Algoritmalar
+KREDİ: 4 (3-2-4)
+DÖNEM: Güz, 2. Yıl
+AÇIKLAMA: Temel veri yapıları: diziler, bağlı listeler, yığıtlar, kuyruklar, ağaçlar, çizgeler.
+Algoritma analizi, Big-O notasyonu, sıralama ve arama algoritmaları.
+ÖN KOŞUL: BM102
+DEĞERLENDİRME: 2 Ara sınav (%50), Final (%40), Proje (%10)
+
+---
+
+DERS KODU: BM202
+DERS ADI: Ayrık Matematik
+KREDİ: 3 (3-0-3)
+DÖNEM: Güz, 2. Yıl
+AÇIKLAMA: Mantık, küme teorisi, ilişkiler, fonksiyonlar, kombinatorik, grafik teorisi
+ve sayı teorisi. Bilgisayar bilimi uygulamalarına odaklanılır.
+ÖN KOŞUL: Yok
+DEĞERLENDİRME: 2 Ara sınav (%60), Final (%40)
+
+---
+
+DERS KODU: BM203
+DERS ADI: Sayısal Yöntemler
+KREDİ: 3 (2-2-3)
+DÖNEM: Bahar, 2. Yıl
+AÇIKLAMA: Sayısal analiz yöntemleri, hata analizi, doğrusal denklem sistemleri,
+interpolasyon, sayısal türev ve integral, diferansiyel denklemler.
+ÖN KOŞUL: MAT101, BM101
+DEĞERLENDİRME: 2 Ara sınav (%50), Final (%40), Lab (%10)

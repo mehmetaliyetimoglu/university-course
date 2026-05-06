@@ -1,0 +1,48 @@
+BÖLÜM: Bilgisayar Mühendisliği
+BELGE: Algoritma Teorisi ve Hesaplama Kuramı
+
+---
+
+DERS KODU: BM361
+DERS ADI: Algoritma Analizi ve Tasarımı
+KREDİ: 3 (3-0-3)
+DÖNEM: Güz, 3. Yıl
+AÇIKLAMA: Gelişmiş algoritma tasarım teknikleri: böl ve yönet, dinamik programlama,
+açgözlü algoritmalar, çizge algoritmaları (Dijkstra, Bellman-Ford, Kruskal, Prim).
+NP-tamlık ve hesaplanamırlık. Yaklaştırma algoritmaları.
+ÖN KOŞUL: BM201, BM202
+DEĞERLENDİRME: 2 Ara sınav (%50), Final (%40), Ödev (%10)
+
+---
+
+DERS KODU: BM362
+DERS ADI: Biçimsel Diller ve Otomatalar
+KREDİ: 3 (3-0-3)
+DÖNEM: Bahar, 3. Yıl
+AÇIKLAMA: Sonlu otomatalar (DFA, NFA), düzenli diller, bağlamdan-bağımsız gramerler,
+itici otomat, Turing makineleri, karar verilebilirlik ve hesaplanamırlık.
+ÖN KOŞUL: BM202
+DEĞERLENDİRME: 2 Ara sınav (%60), Final (%40)
+
+---
+
+DERS KODU: BM461
+DERS ADI: Derleyici Tasarımı
+KREDİ: 3 (2-2-3)
+DÖNEM: Güz, 4. Yıl (Seçmeli)
+AÇIKLAMA: Derleyici aşamaları, sözcük analizi, sözdizim analizi, anlamsal analiz,
+ara kod üretimi, kod optimizasyonu, kod üretimi. LLVM altyapısına giriş.
+ÖN KOŞUL: BM362
+DEĞERLENDİRME: Ara sınav (%25), Final (%35), Proje (%40)
+
+---
+
+DERS KODU: BM462
+DERS ADI: Paralel Programlama
+KREDİ: 3 (2-2-3)
+DÖNEM: Bahar, 4. Yıl (Seçmeli)
+AÇIKLAMA: Paralel hesaplama modelleri, OpenMP ile paylaşımlı bellek programlama,
+MPI ile dağıtık bellek programlama, CUDA ile GPU programlama,
+eşzamanlılık sorunları ve çözümleri.
+ÖN KOŞUL: BM301
+DEĞERLENDİRME: Ara sınav (%20), Final (%30), Lab/Proje (%50)

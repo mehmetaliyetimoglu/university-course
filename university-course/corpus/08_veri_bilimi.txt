@@ -1,0 +1,47 @@
+BÖLÜM: Bilgisayar Mühendisliği
+BELGE: Veri Bilimi ve Analitik Dersleri
+
+---
+
+DERS KODU: BM441
+DERS ADI: Veri Bilimine Giriş
+KREDİ: 3 (2-2-3)
+DÖNEM: Güz, 4. Yıl
+AÇIKLAMA: Veri bilimi iş akışı, veri toplama ve temizleme, keşifsel veri analizi,
+görselleştirme (matplotlib, seaborn), özellik mühendisliği, model değerlendirme.
+Python'da NumPy ve Pandas kullanımı.
+ÖN KOŞUL: MAT301, BM201
+DEĞERLENDİRME: Ara sınav (%20), Final (%30), Proje (%50)
+
+---
+
+DERS KODU: BM442
+DERS ADI: Veri Görselleştirme
+KREDİ: 3 (2-2-3)
+DÖNEM: Bahar, 4. Yıl (Seçmeli)
+AÇIKLAMA: Etkili veri görselleştirme prensipleri, etkileşimli görseller (Plotly, Bokeh, D3.js),
+dashboard oluşturma (Tableau, Power BI), hikaye anlatımı ile veri sunumu.
+ÖN KOŞUL: BM441
+DEĞERLENDİRME: Ara sınav (%20), Final (%30), Proje (%50)
+
+---
+
+DERS KODU: BM443
+DERS ADI: Zaman Serisi Analizi
+KREDİ: 3 (3-0-3)
+DÖNEM: Güz, 4. Yıl (Seçmeli)
+AÇIKLAMA: Zaman serisi bileşenleri, hareketli ortalama, ARIMA, SARIMA modelleri,
+tahmin yöntemleri, sinyal işleme temelleri, derin öğrenme ile zaman serisi.
+ÖN KOŞUL: MAT301, BM402
+DEĞERLENDİRME: Ara sınav (%25), Final (%35), Proje (%40)
+
+---
+
+DERS KODU: BM444
+DERS ADI: İş Zekası ve Veri Ambarı
+KREDİ: 3 (2-2-3)
+DÖNEM: Bahar, 4. Yıl (Seçmeli)
+AÇIKLAMA: Veri ambarı mimarileri (Kimball, Inmon), boyutsal modelleme, OLAP küpleri,
+ETL/ELT süreçleri, modern veri yığını (dbt, Airflow), BI araçları.
+ÖN KOŞUL: BM311
+DEĞERLENDİRME: Ara sınav (%25), Final (%35), Proje (%40)

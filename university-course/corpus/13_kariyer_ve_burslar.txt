@@ -1,0 +1,60 @@
+BÖLÜM: Öğrenci İşleri ve Kariyer Merkezi
+BELGE: Kariyer Olanakları, Burslar ve Değişim Programları
+
+---
+
+KARİYER YÖNLENDİRME
+
+Bilgisayar Mühendisliği mezunlarının çalışabileceği alanlar:
+- Yazılım Geliştirme (Backend, Frontend, Full-Stack)
+- Yapay Zeka / Makine Öğrenmesi Mühendisi
+- Veri Bilimcisi / Veri Mühendisi
+- Siber Güvenlik Uzmanı
+- DevOps / Cloud Mühendisi
+- Mobil Uygulama Geliştirici
+- Ürün Yöneticisi (teknik arka planlı)
+- Araştırmacı (akademi veya Ar-Ge)
+
+ORTALAMA BAŞLANGIÇ MAAŞLARI (2024 Türkiye):
+- Junior Yazılım Geliştirici: 25.000 - 40.000 TL/ay
+- Veri Bilimcisi (Başlangıç): 30.000 - 45.000 TL/ay
+- Yapay Zeka Mühendisi: 35.000 - 55.000 TL/ay
+- Siber Güvenlik Uzmanı: 30.000 - 50.000 TL/ay
+
+---
+
+BURS OLANAKLARI
+
+TÜBİTAK Lisans Burs Programı:
+- Başvuru: www.tubitak.gov.tr
+- Miktar: Aylık 1.500 TL
+- Koşul: CGPA ≥ 3.00, aktif öğrenci
+
+Bölüm Başarı Bursu:
+- Her dönem en başarılı 3 öğrenciye verilir.
+- Kapsam: Dönem harç ücreti
+- Koşul: O dönem tam yük ders, CGPA ≥ 3.50
+
+Endüstri Bursları (Örnek firmalar):
+- Aselsan Burs Programı
+- Turkcell Yazılım Bursu
+- Arçelik Teknoloji Bursu
+- Mikro Yazılım Bursu
+
+---
+
+DEĞİŞİM PROGRAMLARI
+
+ERASMUS+ Programı:
+- Süre: 1-2 dönem
+- Ülkeler: 30+ Avrupa ülkesi
+- Başvuru: Her yıl Kasım-Ocak arası
+- Koşul: CGPA ≥ 2.50, B2 İngilizce veya ilgili dil
+
+MEVLANA Değişim Programı:
+- Türk dilli ülkelerle değişim
+- Süre: 1 dönem
+
+İkili Anlaşma Programları:
+- ABD, Kanada, Japonya, Güney Kore ile ikili anlaşmalar
+- Başvuru: Uluslararası Ofis

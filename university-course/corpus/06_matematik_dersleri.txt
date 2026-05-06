@@ -1,0 +1,57 @@
+BÖLÜM: Temel Bilimler
+BELGE: Matematik Dersleri
+
+---
+
+DERS KODU: MAT101
+DERS ADI: Matematik I (Diferansiyel Hesap)
+KREDİ: 4 (4-0-4)
+DÖNEM: Güz, 1. Yıl
+AÇIKLAMA: Limitler ve süreklilik, türev ve uygulamaları, ortalama değer teoremi,
+L'Hôpital kuralı, belirsiz integral, Riemann integrali, temel integral teknikleri.
+ÖN KOŞUL: Yok
+DEĞERLENDİRME: 2 Ara sınav (%60), Final (%40)
+
+---
+
+DERS KODU: MAT102
+DERS ADI: Matematik II (İntegral Hesap)
+KREDİ: 4 (4-0-4)
+DÖNEM: Bahar, 1. Yıl
+AÇIKLAMA: Belirli integral ve uygulamaları, integral teknikleri, uygunsuz integraller,
+diziler ve seriler, Taylor ve Maclaurin serileri, polar koordinatlar.
+ÖN KOŞUL: MAT101
+DEĞERLENDİRME: 2 Ara sınav (%60), Final (%40)
+
+---
+
+DERS KODU: MAT201
+DERS ADI: Doğrusal Cebir
+KREDİ: 3 (3-0-3)
+DÖNEM: Güz, 2. Yıl
+AÇIKLAMA: Matris işlemleri, determinantlar, doğrusal denklem sistemleri, vektör uzayları,
+doğrusal dönüşümler, özdeğerler ve özvektörler, köşegenleştirme.
+ÖN KOŞUL: MAT101
+DEĞERLENDİRME: 2 Ara sınav (%60), Final (%40)
+
+---
+
+DERS KODU: MAT301
+DERS ADI: Olasılık ve İstatistik
+KREDİ: 3 (3-0-3)
+DÖNEM: Bahar, 2. Yıl
+AÇIKLAMA: Olasılık teorisi, rastlantı değişkenleri, olasılık dağılımları (normal, Poisson, binom),
+merkezi limit teoremi, parametre tahmini, hipotez testleri, regresyon analizi.
+ÖN KOŞUL: MAT102
+DEĞERLENDİRME: 2 Ara sınav (%60), Final (%40)
+
+---
+
+DERS KODU: MAT302
+DERS ADI: Diferansiyel Denklemler
+KREDİ: 3 (3-0-3)
+DÖNEM: Güz, 3. Yıl
+AÇIKLAMA: Birinci ve ikinci dereceden diferansiyel denklemler, Laplace dönüşümü,
+sistemler, seri çözümler, kısmi diferansiyel denklemlere giriş.
+ÖN KOŞUL: MAT102, MAT201
+DEĞERLENDİRME: 2 Ara sınav (%60), Final (%40)

@@ -1,0 +1,47 @@
+BÖLÜM: Bilgisayar Mühendisliği
+BELGE: Yazılım Mühendisliği Dersleri
+
+---
+
+DERS KODU: BM331
+DERS ADI: Yazılım Mühendisliği
+KREDİ: 3 (3-0-3)
+DÖNEM: Güz, 3. Yıl
+AÇIKLAMA: Yazılım geliştirme yaşam döngüsü, gereksinim mühendisliği, sistem analizi ve tasarım,
+UML, tasarım desenleri (GoF), yazılım test teknikleri, Agile/Scrum metodolojileri.
+ÖN KOŞUL: BM201
+DEĞERLENDİRME: Ara sınav (%25), Final (%35), Proje (%40)
+
+---
+
+DERS KODU: BM332
+DERS ADI: Yazılım Test ve Kalite Güvencesi
+KREDİ: 3 (2-2-3)
+DÖNEM: Bahar, 3. Yıl (Seçmeli)
+AÇIKLAMA: Birim testi (JUnit, pytest), entegrasyon testi, sistem testi, performans testi.
+Test güdümlü geliştirme (TDD), davranış güdümlü geliştirme (BDD).
+CI/CD pipeline entegrasyonu, kod kalite metrikleri.
+ÖN KOŞUL: BM331
+DEĞERLENDİRME: Ara sınav (%20), Final (%30), Lab (%50)
+
+---
+
+DERS KODU: BM431
+DERS ADI: Yazılım Proje Yönetimi
+KREDİ: 3 (3-0-3)
+DÖNEM: Güz, 4. Yıl
+AÇIKLAMA: Proje planlama, maliyet tahmini, risk yönetimi, kaynak yönetimi,
+proje takip araçları (Jira, Trello), ekip yönetimi, yazılım sözleşmeleri ve etik.
+ÖN KOŞUL: BM331
+DEĞERLENDİRME: Ara sınav (%25), Final (%35), Proje (%40)
+
+---
+
+DERS KODU: BM432
+DERS ADI: Açık Kaynak Yazılım Geliştirme
+KREDİ: 3 (2-2-3)
+DÖNEM: Bahar, 4. Yıl (Seçmeli)
+AÇIKLAMA: Git ve GitHub ile sürüm kontrolü, açık kaynak lisansları, pull request süreci,
+topluluk katkısı, kod review kültürü, GitHub Actions ile otomasyon.
+ÖN KOŞUL: BM331
+DEĞERLENDİRME: Ara sınav (%15), Final (%25), Katkı Portföyü (%60)

@@ -1,0 +1,46 @@
+BÖLÜM: Akademik Rehberlik
+BELGE: Mezuniyet Gereksinimleri ve Müfredat Yapısı
+
+---
+
+MEZUN OLMA KOŞULLARI - BİLGİSAYAR MÜHENDİSLİĞİ BÖLÜMÜ
+
+Toplam Kredi: En az 240 AKTS kredi tamamlanmalıdır.
+Zorunlu Dersler: Tüm zorunlu dersler (136 kredi) başarıyla tamamlanmalıdır.
+Seçmeli Dersler: En az 60 kredi seçmeli ders alınmalıdır.
+Staj: 30 iş günü endüstriyel staj zorunludur.
+Mezuniyet Projesi: BM490 Bitirme Projesi başarıyla tamamlanmalıdır.
+Not Ortalaması: Mezun olmak için CGPA en az 2.00/4.00 olmalıdır.
+
+---
+
+DERS KODU: BM490
+DERS ADI: Bitirme Projesi
+KREDİ: 6 (0-4-6)
+DÖNEM: Güz + Bahar, 4. Yıl
+AÇIKLAMA: Bölüm onaylı bir danışman eşliğinde bireysel veya iki kişilik ekiple gerçekleştirilen
+kapsamlı mühendislik projesi. Proje önerisi, ara rapor, final raporu ve sunum zorunludur.
+ÖN KOŞUL: 4. Yılda olmak, CGPA ≥ 2.00
+DEĞERLENDİRME: Danışman değerlendirmesi (%40), Jüri sunumu (%40), Rapor (%20)
+
+---
+
+DERS KODU: BM491
+DERS ADI: Endüstriyel Staj
+KREDİ: 0 (Pass/Fail)
+DÖNEM: Yaz dönemi (2. veya 3. yıl sonrası)
+AÇIKLAMA: Onaylı bir firmada en az 30 iş günü (6 hafta) staj. Staj raporu ve
+firma değerlendirme formu teslim edilmelidir. Staj firması bölüm tarafından onaylanmalıdır.
+
+---
+
+YILLIK DERS PLANI ÖZETİ:
+1. Yıl: BM101, BM102, MAT101, MAT102, FİZ101, FİZ102, İNG101 (7 ders)
+2. Yıl: BM201, BM202, BM203, BM251, MAT201, MAT301 (6 ders)
+3. Yıl: BM301, BM302, BM311, BM321, BM331 + 2 seçmeli (7 ders)
+4. Yıl: BM401, BM431, BM490 + 5 seçmeli (8 ders)
+
+SEÇMELI DERS GRUPLARI:
+- Alan Seçmelileri: Yapay Zeka, Veri Bilimi, Sistem, Web/Mobil
+- Teknik Seçmeliler: Diğer bölümlerden alınabilecek dersler
+- İnsani Bilimler Seçmelileri: Sosyal bilimler, iletişim vb.

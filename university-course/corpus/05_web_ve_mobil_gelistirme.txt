@@ -1,0 +1,46 @@
+BÖLÜM: Bilgisayar Mühendisliği
+BELGE: Web ve Mobil Uygulama Geliştirme Dersleri
+
+---
+
+DERS KODU: BM321
+DERS ADI: Web Programlama
+KREDİ: 4 (3-2-4)
+DÖNEM: Bahar, 3. Yıl
+AÇIKLAMA: HTML5, CSS3, JavaScript temelleri. React.js ile modern frontend geliştirme.
+Node.js ve Express.js ile backend. RESTful API tasarımı. JWT kimlik doğrulama.
+ÖN KOŞUL: BM102
+DEĞERLENDİRME: Ara sınav (%20), Final (%30), Proje (%50)
+
+---
+
+DERS KODU: BM421
+DERS ADI: Mobil Uygulama Geliştirme
+KREDİ: 3 (2-2-3)
+DÖNEM: Güz, 4. Yıl (Seçmeli)
+AÇIKLAMA: Android ve iOS uygulama geliştirme temelleri. React Native ile çapraz platform
+geliştirme. Mobil UI/UX tasarım prensipleri. Firebase entegrasyonu.
+ÖN KOŞUL: BM321
+DEĞERLENDİRME: Ara sınav (%20), Final (%30), Proje (%50)
+
+---
+
+DERS KODU: BM422
+DERS ADI: Bulut Bilişim ve DevOps
+KREDİ: 3 (2-2-3)
+DÖNEM: Bahar, 4. Yıl (Seçmeli)
+AÇIKLAMA: AWS, Azure, GCP temel servisleri. Docker konteynerizasyon, Kubernetes orkestrasyon.
+CI/CD pipeline'ları, Infrastructure as Code (Terraform). Mikroservis mimarisi.
+ÖN KOŞUL: BM301, BM302
+DEĞERLENDİRME: Ara sınav (%20), Final (%30), Proje (%50)
+
+---
+
+DERS KODU: BM423
+DERS ADI: API Geliştirme ve Mikroservisler
+KREDİ: 3 (3-0-3)
+DÖNEM: Güz, 4. Yıl (Seçmeli)
+AÇIKLAMA: RESTful ve GraphQL API tasarımı, API gateway, servis mesh, gRPC,
+mesaj kuyruğu (RabbitMQ, Kafka), mikroservis desenleri ve anti-desenleri.
+ÖN KOŞUL: BM321
+DEĞERLENDİRME: Ara sınav (%25), Final (%35), Proje (%40)

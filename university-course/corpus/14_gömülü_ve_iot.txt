@@ -1,0 +1,37 @@
+BÖLÜM: Bilgisayar Mühendisliği
+BELGE: Gömülü Sistemler ve IoT Dersleri
+
+---
+
+DERS KODU: BM371
+DERS ADI: Gömülü Sistemler
+KREDİ: 4 (3-2-4)
+DÖNEM: Bahar, 3. Yıl (Seçmeli)
+AÇIKLAMA: Mikrodenetleyici programlama (ARM Cortex), C ile düşük seviye programlama,
+gerçek zamanlı işletim sistemleri (FreeRTOS), çevre birimi arayüzleri (GPIO, UART, SPI, I2C).
+Arduino ve STM32 ile lab çalışmaları.
+ÖN KOŞUL: BM251
+DEĞERLENDİRME: Ara sınav (%20), Final (%30), Lab/Proje (%50)
+
+---
+
+DERS KODU: BM372
+DERS ADI: Nesnelerin İnterneti (IoT)
+KREDİ: 3 (2-2-3)
+DÖNEM: Güz, 4. Yıl (Seçmeli)
+AÇIKLAMA: IoT mimarisi ve protokolleri (MQTT, CoAP), sensör ve aktüatörler,
+Raspberry Pi ile uygulama, bulut entegrasyonu (AWS IoT, Azure IoT Hub),
+veri güvenliği ve gizlilik, akıllı şehir uygulamaları.
+ÖN KOŞUL: BM371
+DEĞERLENDİRME: Ara sınav (%20), Final (%30), Proje (%50)
+
+---
+
+DERS KODU: BM373
+DERS ADI: Robotik ve Otonom Sistemler
+KREDİ: 3 (2-2-3)
+DÖNEM: Bahar, 4. Yıl (Seçmeli)
+AÇIKLAMA: Robot kinematik ve dinamiği, ROS (Robot Operating System), sensör füzyonu,
+otonom navigasyon, SLAM, insansız hava araçları (drone) programlama.
+ÖN KOŞUL: BM371, MAT201
+DEĞERLENDİRME: Ara sınav (%20), Final (%30), Proje (%50)

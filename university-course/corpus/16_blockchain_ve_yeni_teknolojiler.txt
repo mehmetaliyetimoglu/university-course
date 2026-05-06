@@ -1,0 +1,37 @@
+BÖLÜM: Bilgisayar Mühendisliği
+BELGE: Yeni Nesil Teknolojiler - Blockchain ve Web3
+
+---
+
+DERS KODU: BM471
+DERS ADI: Blockchain ve Dağıtık Defter Teknolojisi
+KREDİ: 3 (3-0-3)
+DÖNEM: Bahar, 4. Yıl (Seçmeli)
+AÇIKLAMA: Blockchain temelleri, konsensüs algoritmaları (PoW, PoS), kriptografi temelleri,
+Bitcoin ve Ethereum protokolleri, akıllı sözleşmeler (Solidity), DeFi kavramları,
+NFT teknolojisi ve uygulamaları.
+ÖN KOŞUL: BM351 (veya izin)
+DEĞERLENDİRME: Ara sınav (%25), Final (%35), Proje (%40)
+
+---
+
+DERS KODU: BM472
+DERS ADI: Kuantum Bilişime Giriş
+KREDİ: 3 (3-0-3)
+DÖNEM: Güz, 4. Yıl (Seçmeli)
+AÇIKLAMA: Kuantum mekaniği temelleri, qubitler ve kuantum kapıları, kuantum devre modeli,
+Grover ve Shor algoritmaları, kuantum hata düzeltme, NISQ cihazları,
+IBM Qiskit ile uygulamalar.
+ÖN KOŞUL: MAT201, FİZ102 (veya izin)
+DEĞERLENDİRME: Ara sınav (%25), Final (%40), Ödev (%35)
+
+---
+
+DERS KODU: BM473
+DERS ADI: Yapay Zeka Etiği ve Yönetişimi
+KREDİ: 2 (2-0-2)
+DÖNEM: Bahar, 4. Yıl (Seçmeli)
+AÇIKLAMA: AI sistemlerinde önyargı ve adalet, açıklanabilir YZ (XAI), GDPR ve YZ düzenlemeleri,
+otonom sistemlerin etiği, sosyal etki değerlendirmesi, sorumlu YZ geliştirme çerçeveleri.
+ÖN KOŞUL: BM401
+DEĞERLENDİRME: Ara sınav (%25), Final (%35), Rapor/Tartışma (%40)

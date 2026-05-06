@@ -1,0 +1,57 @@
+BÖLÜM: Temel Bilimler
+BELGE: Fizik ve Diğer Temel Bilim Dersleri
+
+---
+
+DERS KODU: FİZ101
+DERS ADI: Fizik I (Mekanik)
+KREDİ: 4 (3-2-4)
+DÖNEM: Güz, 1. Yıl
+AÇIKLAMA: Kinematik, Newton'un hareket yasaları, iş ve enerji, momentum,
+dönme hareketi, titreşimler, dalgalar. Laboratuvar çalışmaları.
+ÖN KOŞUL: Yok
+DEĞERLENDİRME: 2 Ara sınav (%40), Final (%40), Lab (%20)
+
+---
+
+DERS KODU: FİZ102
+DERS ADI: Fizik II (Elektromagnetizma)
+KREDİ: 4 (3-2-4)
+DÖNEM: Bahar, 1. Yıl
+AÇIKLAMA: Elektrostatik, elektrik akımı ve devreler, manyetizma, elektromanyetik indüksiyon,
+Maxwell denklemlerine giriş, optik temelleri.
+ÖN KOŞUL: FİZ101, MAT101
+DEĞERLENDİRME: 2 Ara sınav (%40), Final (%40), Lab (%20)
+
+---
+
+DERS KODU: İNG101
+DERS ADI: Akademik İngilizce I
+KREDİ: 3 (3-0-3)
+DÖNEM: Güz, 1. Yıl
+AÇIKLAMA: Akademik okuma ve yazma becerileri, teknik İngilizce, makale okuma ve özetleme,
+sunum becerileri. CEFR B2 hedef düzey.
+ÖN KOŞUL: Yok
+DEĞERLENDİRME: Ara sınav (%30), Final (%30), Ödevler (%40)
+
+---
+
+DERS KODU: İNG102
+DERS ADI: Teknik İngilizce Yazımı
+KREDİ: 3 (3-0-3)
+DÖNEM: Bahar, 2. Yıl (Seçmeli)
+AÇIKLAMA: Teknik doküman yazımı, proje raporları, akademik makale yazımı, CV ve
+motivasyon mektupları, teknik sunum hazırlama.
+ÖN KOŞUL: İNG101
+DEĞERLENDİRME: Ara sınav (%20), Final (%30), Yazılı Ödevler (%50)
+
+---
+
+DERS KODU: MÜH101
+DERS ADI: Mühendislik Etiği ve Toplum
+KREDİ: 2 (2-0-2)
+DÖNEM: Bahar, 3. Yıl
+AÇIKLAMA: Mühendislik etiği, mesleki sorumluluk, fikri mülkiyet hakları, yazılım lisansları,
+yapay zeka etiği, veri gizliliği, sürdürülebilir mühendislik.
+ÖN KOŞUL: Yok
+DEĞERLENDİRME: Ara sınav (%30), Final (%30), Tartışma/Ödev (%40)

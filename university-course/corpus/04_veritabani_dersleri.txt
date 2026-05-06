@@ -1,0 +1,37 @@
+BÖLÜM: Bilgisayar Mühendisliği
+BELGE: Veritabanı Yönetimi Dersleri
+
+---
+
+DERS KODU: BM311
+DERS ADI: Veritabanı Yönetim Sistemleri
+KREDİ: 4 (3-2-4)
+DÖNEM: Güz, 3. Yıl
+AÇIKLAMA: İlişkisel veritabanı modeli, ER diyagramları, SQL (DDL, DML, DCL),
+normalizasyon (1NF, 2NF, 3NF, BCNF), indeksleme, sorgu optimizasyonu,
+işlem yönetimi ve eşzamanlılık kontrolü. PostgreSQL ile lab çalışmaları.
+ÖN KOŞUL: BM201
+DEĞERLENDİRME: 2 Ara sınav (%40), Final (%40), Lab (%20)
+
+---
+
+DERS KODU: BM411
+DERS ADI: NoSQL Veritabanları
+KREDİ: 3 (3-0-3)
+DÖNEM: Bahar, 4. Yıl (Seçmeli)
+AÇIKLAMA: İlişkisel olmayan veritabanı paradigmaları: belge tabanlı (MongoDB),
+anahtar-değer (Redis), sütun ailesi (Cassandra), grafik veritabanları (Neo4j).
+CAP teoremi, eventual consistency, büyük veri senaryoları.
+ÖN KOŞUL: BM311
+DEĞERLENDİRME: Ara sınav (%30), Final (%40), Proje (%30)
+
+---
+
+DERS KODU: BM412
+DERS ADI: Büyük Veri İşleme
+KREDİ: 3 (3-0-3)
+DÖNEM: Güz, 4. Yıl (Seçmeli)
+AÇIKLAMA: Hadoop ekosistemi, HDFS, MapReduce, Apache Spark, Spark SQL,
+Kafka ile akış işleme, veri ambarı kavramları, ETL süreçleri.
+ÖN KOŞUL: BM311
+DEĞERLENDİRME: Ara sınav (%25), Final (%35), Proje (%40)
