@@ -8,7 +8,7 @@ Kullanım:
     python main.py --demo             # Run demo queries
     python main.py --query "question" # Single-query mode
 """
-
+# ...
 import sys
 import os
 import argparse
